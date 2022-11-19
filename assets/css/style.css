@@ -4,12 +4,17 @@
 # General
 --------------------------------------------------------------*/
 body {
-  
+  background: url("/assets/img/mmebg19.png"); 
+  /* animation: kenburns-top-right 10s ease-out forwards; */
+  background-size: contain;
 
+}
+:root{
+  --mme:#1E68CB;
 }
 
 a {
-  color: #106eea;
+  color: #1E68CB;
   text-decoration: none;
 }
 
@@ -24,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -46,7 +51,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #106eea;
+  border: 6px solid #1E68CB;
   border-top-color: #e2eefd;
   border-radius: 50%;
   width: 60px;
@@ -85,7 +90,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #106eea;
+  background: #1E68CB;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -99,7 +104,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #3284f1;
+  background: #1E68CB;
   color: #fff;
 }
 
@@ -168,7 +173,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgb(36, 36, 36);
+  background: rgba(255, 255, 255, 0.596);
   transition: all 0.5s;
   z-index: 997;
   height: 65px;
@@ -193,7 +198,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #106eea;
+  color: #1E68CB;
 }
 
 #header .logo a span {
@@ -267,7 +272,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #106eea;
+  background-color: #1E68CB;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -284,7 +289,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #106eea;
+  color: #1E68CB;
 }
 
 .navbar .dropdown ul {
@@ -318,7 +323,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #106eea;
+  color: #1E68CB;
 }
 
 .navbar .dropdown:hover>ul {
@@ -427,7 +432,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #106eea;
+  color: #1E68CB;
 }
 
 .navbar-mobile .getstarted,
@@ -462,7 +467,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #106eea;
+  color: #1E68CB;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -477,9 +482,9 @@ h6 {
 .hero-main{
   width: 100%;
   height: 210vh;
-  background: url("/assets/img/mmebg9.jpg"); 
+  background: url("/assets/img/mmebg19.png"); 
   /* animation: kenburns-top-right 10s ease-out forwards; */
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -523,21 +528,23 @@ h6 {
   box-sizing: border-box;
   border-bottom: 3px solid #5b5b5b6d;
   display: flex;
+  justify-content: right;
+ 
   padding-bottom: 100px;
  
 }
 
 .hero_test_content{
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.107);
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.936);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
- 
-  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.477);
+  border-radius: 10px;
   backdrop-filter: blur(25px);
-  border :1px solid rgba(255, 255, 255, 0.164);
+  
 }
 
 .hero_test_content h1{
@@ -556,13 +563,13 @@ h6 {
 .hero_test_content a{
   margin-top: 20px;
   padding: 10px 30px;
-  background-color: #3252f1;
+  background-color: #1E68CB;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-style: italic;
   border-radius: 33PX;
-  border: 2px solid #3252f1;
+  border: 2px solid #1E68CB;
   transition: 0.2s ease-in;
 
 
@@ -571,7 +578,7 @@ h6 {
 .hero_test_content a:hover{
   background: rgba(255, 255, 255, 0);
   color: #ffffff;
-  border: 2px solid #3252f1;
+  border: 2px solid #1E68CB;
 }
 
 
@@ -583,7 +590,7 @@ h6 {
  top: 70px;
  z-index: 1;
  display: flex;
- transform: scale(0.9);
+ transform: scale(1);
  box-shadow: 0px 0px 30px rgba(33, 33, 33, 0.25);
  border-radius: 25px;
 
@@ -594,9 +601,9 @@ h6 {
 /* HERO 01 LEFT CONTENT */
 
 #hero-left{
-  background-color: rgba(28, 28, 28, 0.132);
+  background-color: rgba(255, 255, 255, 0.591);
   backdrop-filter: blur(60px);
-  border: 2px solid rgba(255, 255, 255, 0.21);
+  border-top: 2px solid rgba(255, 255, 255, 0.21);
   width: 50%;
   height: 100%;
   color: #ffffff;
@@ -604,31 +611,76 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 25px;
+  
+}
+
+#hero-left #intro{
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+ 
+  
 }
 
 
-#hero-left div:nth-child(2){
-  background-color:none;
-   height: 100%;
-  width: 100%;
+.intro1{
+  background-color: none;
   display: flex;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.intro1 .icon{
+  width: 100px;
+ height: 100px; 
+ background-color: coral;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ margin-right: -30px;
+ margin-top: -30px;
+}
+
+.intro1 .icon i{
+  font-size: 2rem;
+}
+.intro1 .head1{
+  width: 400px;
+  height: 100px; 
+  background-color: rgba(255, 255, 255, 0.628);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
-  padding-left: 50px;
-  transform: scale(0.8);
+  padding: 5px 5px 5px 25px;
+  border-radius: 15px;
+  color: #1a1919;
+  border: 1px solid rgba(204, 204, 204, 0.676);
 }
 
-#hero-left div:nth-child(2) img{
-width: 400px;
-height: 400px;
-transition: 0.8s ease-in-out;
+
+
+.intro2{
+  background:#1a1919;
+  padding: 8px;
+  margin: 3px;
+}
+.intro3{
+  background:#1a1919;
+  padding: 8px;
+  margin: 3px;
 }
 
-#hero-left div:nth-child(2) img:hover{
- transform: translateX(50px);
-}
+
+
+
+
+
 
 
 
@@ -637,8 +689,8 @@ transition: 0.8s ease-in-out;
 #hero-right{
   background-color: rgba(28, 28, 28, 0.132);
   backdrop-filter: blur(60px);
-  border-top-right-radius: 25px;
-  border: 2px solid rgba(255, 255, 255, 0.21);
+ 
+  border-top: 2px solid rgba(255, 255, 255, 0.21);
   width: 50%;
   height: 100%;
   color: #ffffff;
@@ -651,7 +703,7 @@ transition: 0.8s ease-in-out;
 }
 
 #hero-right a{
-  background-color: #106eea;
+  background-color: #1E68CB;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 10px 25px;
   margin-top: 30px;
@@ -712,7 +764,7 @@ transition: 0.8s ease-in-out;
   z-index: 1;
   transform: scale(0.9);
   box-sizing: border-box;
-  border-bottom: 3px solid #106eea;
+  border-bottom: 3px solid #1E68CB;
   display: flex;
   margin-bottom: 100px;
  }
@@ -729,7 +781,7 @@ transition: 0.8s ease-in-out;
  #hero2-right{
   width: 50%;
   height: 100%;
-  background: #106eea;
+  background: #1E68CB;
  }
 /* ####### HERO PAGE MEDIA QUERY  (ALL HERO PAGES) ######## */
 
@@ -810,7 +862,7 @@ transition: 0.8s ease-in-out;
 
 .about{
   height: 100vh;
-  background: linear-gradient(to right, #106eea, #74ccff);
+  background: linear-gradient(to right, #1E68CB, #74ccff);
   position: sticky;
   top: 70px;
   z-index: 2;
