@@ -529,9 +529,7 @@ h6 {
   border-bottom: 3px solid #5b5b5b6d;
   display: flex;
   justify-content: right;
- 
   padding-bottom: 100px;
- 
 }
 
 .hero_test_content{
@@ -544,7 +542,6 @@ h6 {
   border: 2px solid rgba(255, 255, 255, 0.477);
   border-radius: 10px;
   backdrop-filter: blur(25px);
-  
 }
 
 .hero_test_content h1{
@@ -601,7 +598,7 @@ h6 {
 /* HERO 01 LEFT CONTENT */
 
 #hero-left{
-  background-color: rgba(255, 255, 255, 0.591);
+  background-color: rgba(255, 255, 255, 0.676);
   backdrop-filter: blur(60px);
   border-top: 2px solid rgba(255, 255, 255, 0.21);
   width: 50%;
@@ -615,13 +612,10 @@ h6 {
 }
 
 #hero-left #intro{
-  background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 500px;
- 
-  
 }
 
 
@@ -630,12 +624,26 @@ h6 {
   display: flex;
   height: 100px;
   margin-bottom: 30px;
+  transform: scale(0.8);
+  transition: 0.2s ease-out;
+}
+
+.intro1:hover {
+  transform: translateY(-10px);
+  transform: scale(1);
+}
+
+.intro1:hover  .icon{
+  transform: scale(1);
+  transform: rotate(25deg);
 }
 
 .intro1 .icon{
+  transform: scale(0.8);
   width: 100px;
  height: 100px; 
- background-color: coral;
+ background-color: #1E68CB;
+ box-shadow: rgba(52, 130, 255, 0.306) 0px 8px 24px;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -643,6 +651,7 @@ h6 {
  border-radius: 50%;
  margin-right: -30px;
  margin-top: -30px;
+ transition: 0.3s ease-out;
 }
 
 .intro1 .icon i{
@@ -661,6 +670,12 @@ h6 {
   border-radius: 15px;
   color: #1a1919;
   border: 1px solid rgba(204, 204, 204, 0.676);
+}
+
+
+.intro1 .head1 span{
+  color: #1E68CB;
+  border-bottom: 2px solid #000;
 }
 
 
@@ -687,13 +702,12 @@ h6 {
 /* HERO 01 RIGHT CONTENT */
 
 #hero-right{
-  background-color: rgba(28, 28, 28, 0.132);
+  background-color: rgba(255, 255, 255, 0.591);
   backdrop-filter: blur(60px);
- 
   border-top: 2px solid rgba(255, 255, 255, 0.21);
   width: 50%;
   height: 100%;
-  color: #ffffff;
+  color: #1E68CB;
   display: flex;
  flex-direction: column;
  justify-content: center;
@@ -702,28 +716,56 @@ h6 {
  padding-top: 20px;
 }
 
-#hero-right a{
-  background-color: #1E68CB;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 10px 25px;
-  margin-top: 30px;
-  transition: all 0.3s ease-in;
-  color: #ffffff;
+#hero-right #right_content {
+  
+  width: 80%;
+}
+#hero-right #right_content .right_content_head{
+  display: flex;
 }
 
-#hero-right a:hover{
-  padding: 10px 45px;
+#hero-right #right_content .right_content_head h3{
+  background-color: rgba(255, 255, 255, 0.463);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 15px;
+  padding: 15px ;
+  text-align: center;
+  
 }
 
+#hero-right #right_content .icon i{
+  font-size: 1.6rem;
+}
 
+#hero-right #right_content .icon{
+  margin-top: -25px;
+  margin-left: -20px;
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  background-color: #d4e7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-#hero-right h2{
-  font-size: 4rem;
+#right_content h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#right_content p{
   font-family: 'Montserrat', sans-serif;
-  animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
-  
-  
+  font-weight: 300;
+  color: #222222;
 }
+
+
+
+
+
+
+
 
 
 @keyframes focus-in-expand {
@@ -787,8 +829,14 @@ h6 {
 
  @media (max-width: 991px) {
 
+
+
   .hero-main h1 span{
     font-size: 6.5rem;
+  }
+
+  .hero_test_content{
+    width: 100%;
   }
 
   .hero{
@@ -819,34 +867,20 @@ h6 {
    
     }
 
-  #hero-right h2{
-      font-size: 4rem;
-  }
-    
-  #hero-right span{
-      font-size: 4.5rem;
-     
-  }
-
-  .hero_2{
-    flex-direction: column;
-  }
-
-  #hero2-left{
-    width: 100%;
-    height: 50%;
   
+
+    #hero-left #intro{
+    width: 100vw;
+    display: none;
   }
- 
-  #hero2-right{
-   width: 100%;
-   height: 50%;
+
+  #hero-right{
+    padding-top: 120px;
    
   }
 
-  .hero_main_content{
-    padding: 20px 0;
-    margin: 10px;
+  #hero-right .icon{
+    margin-top: 50px;
   }
     
 }
@@ -860,9 +894,9 @@ h6 {
 # ABOUT SECTION STARTS
 --------------------------------------------------------------*/
 
-.about{
+.service_main{
   height: 100vh;
-  background: linear-gradient(to right, #1E68CB, #74ccff);
+  background: url("/assets/img/mmebg22.jpeg");
   position: sticky;
   top: 70px;
   z-index: 2;
@@ -873,7 +907,14 @@ h6 {
   
 }
 
-.about h1{
+.service_main_head{
+  background-color: rgba(255, 255, 255, 0.463);
+  backdrop-filter: blur(60px);
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 15px;
+}
+
+.service_main h1{
   font-size: 4.5rem;
   color: #ffff;
   font-family: 'Montserrat', sans-serif;
@@ -881,9 +922,13 @@ h6 {
   text-align: center;
 }
 
-.about h1 span{
+.service_main h1 span{
  font-size: 6rem;
 }
+
+
+
+
 .about1{
   height: 100vh;
   background: linear-gradient(to right, #005bd2, #479dff);
