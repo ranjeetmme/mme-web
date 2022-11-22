@@ -517,7 +517,7 @@ h6 {
   }
 }
 
-/* #######  TEST PAGE 01 ######## */
+/* ####### (MAIN) TEST PAGE 01 ######## */
 .hero_test{
   height: 100vh;
   background: none;
@@ -580,6 +580,7 @@ h6 {
 
 
 /* ####### HERO PAGE 01 ######## */
+
 .hero{
  height: 100vh;
  background: none;
@@ -594,10 +595,9 @@ h6 {
 }
 
 
-
 /* HERO 01 LEFT CONTENT */
 
-#hero-left{
+#hero_left_01{
   background-color: rgba(255, 255, 255, 0.676);
   backdrop-filter: blur(60px);
   border-top: 2px solid rgba(255, 255, 255, 0.21);
@@ -608,94 +608,76 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
-#hero-left #intro{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 500px;
-}
-
-
-.intro1{
+.hero_left_01_content{
+  width: 80%;
+  height: 80%;
   background-color: none;
-  display: flex;
-  height: 100px;
-  margin-bottom: 30px;
-  transform: scale(0.8);
-  transition: 0.2s ease-out;
-}
-
-.intro1:hover {
-  transform: translateY(-10px);
-  transform: scale(1);
-}
-
-.intro1:hover  .icon{
-  transform: scale(1);
-  transform: rotate(25deg);
-}
-
-.intro1 .icon{
-  transform: scale(0.8);
-  width: 100px;
- height: 100px; 
- background-color: #1E68CB;
- box-shadow: rgba(52, 130, 255, 0.306) 0px 8px 24px;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- border-radius: 50%;
- margin-right: -30px;
- margin-top: -30px;
- transition: 0.3s ease-out;
-}
-
-.intro1 .icon i{
-  font-size: 2rem;
-}
-.intro1 .head1{
-  width: 400px;
-  height: 100px; 
-  background-color: rgba(255, 255, 255, 0.628);
-  backdrop-filter: blur(10px);
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px 5px 5px 25px;
-  border-radius: 15px;
-  color: #1a1919;
+}
+
+.head1 p{
+  width: 60%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.338);
+  backdrop-filter: blur(5px);
   border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 5px;
+  padding: 5px ;
+  text-align: center;
+  color: #222222;
+  margin-bottom: -50px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.main_img{
+ width: 300px;
+ height: 300px;
+ z-index: -100;
+
+}
+
+.main_img img{
+  width: 300px;
+  height: 250px;
+ transform: scale(1.2);
+ border-radius: 10px;
+ border: 1px solid rgba(204, 204, 204, 0.676);
+ background-color: rgba(255, 255, 255, 0.463);
+ backdrop-filter: blur(10px);
+
+}
+
+.head2{
+  margin-top: -55px;
+  margin-right: -250px;
+ 
+}
+.head2 a{
+  display: block;
+  text-align: center;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.203);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 5px;
+  padding: 10px  ;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #222222;
+
 }
 
 
-.intro1 .head1 span{
-  color: #1E68CB;
-  border-bottom: 2px solid #000;
-}
 
-
-
-.intro2{
-  background:#1a1919;
-  padding: 8px;
-  margin: 3px;
-}
-.intro3{
-  background:#1a1919;
-  padding: 8px;
-  margin: 3px;
-}
-
-
-
-
-
-
+/* HERO 01 LEFT CONTENT ENDS */
 
 
 
@@ -717,7 +699,6 @@ h6 {
 }
 
 #hero-right #right_content {
-  
   width: 80%;
 }
 #hero-right #right_content .right_content_head{
@@ -744,7 +725,7 @@ h6 {
   width:60px;
   height:60px;
   border-radius: 50%;
-  background-color: #d4e7ff;
+  background: linear-gradient(to right, #00c9ff, #92fec1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -759,11 +740,6 @@ h6 {
   font-weight: 300;
   color: #222222;
 }
-
-
-
-
-
 
 
 
@@ -797,39 +773,211 @@ h6 {
  
 }
 
+/* ####### HERO 01 PAGE ENDSSSSS ######## */
+
+
+
 /* ####### HERO 02 PAGE ######## */
-.hero_2{
-  height: 100vh;
-  background: none;
-  position: sticky;
-  top: 70px;
-  z-index: 1;
-  transform: scale(0.9);
-  box-sizing: border-box;
-  border-bottom: 3px solid #1E68CB;
-  display: flex;
-  margin-bottom: 100px;
- }
 
- /* HERO 02 LEFT CONTENT */
+/* HERO 02 LEFT CONTENT */
 
- #hero2-left{
-   width: 50%;
-   height: 100%;
-   background: #ffffff;
- }
- /* HERO 02 RIGHT CONTENT */
-
- #hero2-right{
+ /* note --> This is css for hero 2 left section */
+#hero-left{
+  background-color: rgba(255, 255, 255, 0.676);
+  backdrop-filter: blur(60px);
+  border-top: 2px solid rgba(255, 255, 255, 0.21);
   width: 50%;
   height: 100%;
-  background: #1E68CB;
- }
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#hero-left #intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+
+.intro1{
+  background-color: none;
+  display: flex;
+  height: 100px;
+  margin-bottom: 30px;
+  
+  transition: 0.2s ease-out;
+}
+
+.intro1:hover {
+  transform: translateY(-10px);
+  transform: scale(0.8);
+}
+
+.intro1:hover  .icon{
+ 
+  transform: rotate(25deg);
+}
+
+.intro1 .icon{
+  transform: scale(0.8);
+  width: 100px;
+ height: 100px; 
+ background: linear-gradient(to right, #00c9ff, #92fec1);
+ box-shadow: rgba(52, 130, 255, 0.306) 0px 8px 24px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ margin-right: -30px;
+ margin-top: -30px;
+ transition: 0.3s ease-out;
+}
+
+.intro1 .icon i{
+  font-size: 2rem;
+}
+.intro1 .head1{
+  width: 400px;
+  height: 100px; 
+  background-color: rgba(255, 255, 255, 0.628);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px 5px 25px;
+  border-radius: 15px;
+  color: #1a1919;
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  
+}
+
+.intro1 .head1 h3{
+  font-size: 1.4rem;
+}
+
+
+.intro1 .head1 span{
+  color: #1E68CB;
+  border-bottom: 2px solid #000;
+}
+
+
+
+.intro2{
+  background:#1a1919;
+  padding: 8px;
+  margin: 3px;
+}
+.intro3{
+  background:#1a1919;
+  padding: 8px;
+  margin: 3px;
+}
+
+/* HERO 02 LEFT CONTENT ENDS */
+
+/* HERO 01 RIGHT CONTENT */
+
+#hero_right_02{
+  background-color: rgba(255, 255, 255, 0.676);
+  backdrop-filter: blur(60px);
+  border-top: 2px solid rgba(255, 255, 255, 0.21);
+  width: 50%;
+  height: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_right_02_content{
+  width: 80%;
+  height: 80%;
+  background-color: none;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_right_02_content .head1 p{
+  width: 60%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.338);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 5px;
+  padding: 5px ;
+  text-align: center;
+  color: #222222;
+  margin-left: 200px;
+  margin-bottom: -20px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+.main_img{
+ width: 300px;
+ height: 250px;
+ z-index: -100;
+ 
+
+}
+
+.main_img img{
+  width: 300px;
+  height: 250px;
+ transform: scale(1.2);
+ border-radius: 10px;
+ border: 1px solid rgba(204, 204, 204, 0.676);
+ background-color: rgba(255, 255, 255, 0.463);
+ backdrop-filter: blur(10px);
+
+
+}
+
+.hero_right_02_content .head2{
+  margin-top: -50px;
+  margin-right: 280px;
+ 
+}
+ .head2 a{
+  display: block;
+  text-align: center;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.203);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 5px;
+  padding: 10px 15px ;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  transition: 0.06s ease-in;
+  color: #2e2e2e;
+
+}
+.head2 a:hover{
+   background-color: rgba(255, 255, 255, 0.429);
+  border: 2px solid rgba(50, 159, 255, 0.765);
+}
+
+/* HERO 01 RIGHT CONTENT ENDS */
+
+/* ####### HERO 02 PAGE ENDS ######## */
+
 /* ####### HERO PAGE MEDIA QUERY  (ALL HERO PAGES) ######## */
 
  @media (max-width: 991px) {
-
-
 
   .hero-main h1 span{
     font-size: 6.5rem;
@@ -845,44 +993,73 @@ h6 {
     
   }
 
-  #hero-left{
+  #hero_left_01{
     width: 100%;
-    height: 40%;
+    height: 20%;
   }
-  #hero-right{
-    width: 100%;
-    height: 60%;
+  .hero_left_01_content{
+    display: none;
   }
-
-  #hero-left div:nth-child(2){
-  
-    padding-bottom: 100px;
-    padding-left: 0px;
-  
-  }
-
-  #hero-left div:nth-child(2) img{
-   height: 380px;
-   width: 380px;
-   
-    }
-
-  
-
-    #hero-left #intro{
-    width: 100vw;
+  .hero_right_02_content{
     display: none;
   }
 
   #hero-right{
-    padding-top: 120px;
-   
+    width: 100%;
+    height: 80%;
   }
 
-  #hero-right .icon{
-    margin-top: 50px;
+  #hero_right_02{
+    width: 100%;
+    height: 0%;
   }
-    
+
+ /* This is css for hero 2 left section */
+  #hero-left{
+    width: 100%;
+    height: 100%;
+  }
+
+  #hero-left #intro{
+    width: 100%;
+    min-height: 60%;
+  }
+
+  #intro .intro1{
+  flex-direction: column;
+  height: 90%;
+  width: 95%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  }
+
+  #intro .intro1 .icon{
+    width: 100px;
+    height: 100px;
+    margin-bottom: -30px;
+  }
+
+  .intro1 .head1 {
+      height: 130px;
+      width: 100%;
+  }
+
+  .intro1:hover {
+    transform: translateY(-10px);
+    transform: scale(0.85);
+  }
+  
+  .intro1:hover  .icon{
+    transform: scale(0.7);
+    transform: rotate(25deg);
+  }
+  
+
+
+
 }
 
 /*--------------------------------------------------------------
@@ -896,36 +1073,118 @@ h6 {
 
 .service_main{
   height: 100vh;
-  background: url("/assets/img/mmebg22.jpeg");
+   background: url("/assets/img/mme_servicebg1.png");
+
+  background-size: cover;
   position: sticky;
   top: 70px;
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
+ 
   
 }
 
-.service_main_head{
-  background-color: rgba(255, 255, 255, 0.463);
+/* SERVICE MAIN PAGE CONTENT */
+
+
+
+.service_main_content{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.338);
   backdrop-filter: blur(60px);
   border: 1px solid rgba(204, 204, 204, 0.676);
-  border-radius: 15px;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.service_main h1{
-  font-size: 4.5rem;
-  color: #ffff;
-  font-family: 'Montserrat', sans-serif;
-  transform: scale(0.9);
+.service_main_content .head1{
+  background-color: none;
+}
+
+.service_main_content .head1 h1{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.338);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 5px;
+  padding: 5px ;
   text-align: center;
+  color: #222222;
+
+  font-family: 'Montserrat', sans-serif;
+  
 }
 
-.service_main h1 span{
- font-size: 6rem;
+.service_main_content .head1 span{
+  display: block;
+  width: 80%;
+ 
+  background-color: rgba(255, 255, 255, 0.833);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 5px;
+  padding: 5px ;
+  text-align: center;
+  color: #222222;
+  margin-left: 100px;
+   font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+.service_main_content .main_img{
+ width: 300px;
+ height: 250px;
+ z-index: -100;
+ 
+
 }
 
+.service_main_content .main_img img{
+  width: 300px;
+  height: 250px;
+ transform: scale(1.2);
+ border-radius: 10px;
+ border: 1px solid rgba(204, 204, 204, 0.676);
+ background-color: rgba(255, 255, 255, 0.463);
+ backdrop-filter: blur(10px);
+
+
+}
+
+.service_main_content .service_link{
+margin-right: 150px;
+ margin-top: 20px;
+}
+.service_main_content .service_link a{
+  
+  text-align: center;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.815);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(204, 204, 204, 0.676);
+  border-radius: 5px;
+  padding: 10px;
+   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  transition: 0.06s ease-in;
+  color: #2e2e2e;
+  font-size: 1.3rem;
+  
+
+}
+.service_main_content .head2 a:hover{
+   background-color: rgba(255, 255, 255, 0.429);
+  border: 2px solid rgba(50, 159, 255, 0.765);
+}
+
+/* SERVICE MAIN PAGE ENDS */
 
 
 
